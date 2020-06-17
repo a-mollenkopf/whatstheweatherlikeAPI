@@ -28,84 +28,56 @@
     ></script>
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <header class="header">
-            <h1>Weather Dashboard</h1>
-          </header>
-        </div>
-      </div>
-      <!-- search bar -->
-    </div class="row">
-    <div class="col-md-4">
-    <nav class="navbar navbar-light bg-light">
-        <form class="form-inline">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </nav>
+      <!-- header -->
+    <div class="jumbotron" id="jumbotron">
+        <h1 class="display-4">Weather Dashboard</h1>
     </div>
-    <!-- card at the top that shows data for today -->
-    <div class="cold-md-8"></div>
-      <div class="card">
-        <h5 class="card-header">Featured</h5>
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+            
+    <!-- search bar -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h6>Search for a City:</h6>
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="city-input">
+                            </div>
+                            <button id="search-button" type="submit" class="btn btn-primary">Search</button>
+                        </form>
+                    </div>
+                </div>
+                <div>
+                    <ul id="city-list" class="list-group"></ul>
+                </div>
+            </div>
+               <!-- card at the top that shows data for today -->
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-body">
+                        <div id="city-date-icon">
+                            <h3><span id = "current-city"></span></h3> 
+                            <p>Temperature: <span id="temperature"></span></p>
+                            <p>Humidity: <span id="humidity"></span></p>
+                            <p>Wind Speed: <span id="windspeed"></span></p>
+                            <p>UV Index: <span id="windspeed"></span></p>    
+                        </div>
+                    </div>  
+                </div>
+            
+            
+            
+            <!-- 5 cards for the 5 day forecast -->
+            <div class="row">
+                <div id="forecast-weather" class="col-md-9">
+                <h4>5-Day Forecast:</h4>
+                <div id="forecast-cards"> 
+            </div>
         </div>
     </div>
-      </div>
-      <!-- 5 cards for the 5 day forecast -->
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">temp</a>
-          <a href="#" class="card-link">humidity</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">temp</a>
-          <a href="#" class="card-link">humidity</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">temp</a>
-          <a href="#" class="card-link">humidity</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">temp</a>
-          <a href="#" class="card-link">humidity</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">temp</a>
-          <a href="#" class="card-link">humidity</a>
-        </div>
-      </div>
-    </div>
-      </div>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
   </body>
 </html>
+
+

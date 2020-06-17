@@ -1,6 +1,13 @@
-.header {
+#jumbotron {
     text-align: center;
-    background-color: #565569;
     color: whitesmoke;
+    background-color:rgb(51, 51, 51);
 }
+#city-list {
+    width: 22rem;
+  }
+
+  #forecast1 {
+    display: flex;
+  }
 
