@@ -3,9 +3,9 @@ var APIKey = "appid=cd8e2d0af4e5d853ee4b01e3ca3322fc";
 var lat = "";
 var lon = "";
 
-var weatherURL = "http://api.openweathermap.org/data/2.5/weather?" + APIKey;
-var forecastURL = "http://api.openweathermap.org/data/2.5/forecast?" + APIKey;
-var UVurl = "http://api.openweathermap.org/data/2.5/uvi/forecast?" + APIKey;
+var weatherURL = "https://api.openweathermap.org/data/2.5/weather?" + APIKey;
+var forecastURL = "https://api.openweathermap.org/data/2.5/forecast?" + APIKey;
+var UVurl = "https://api.openweathermap.org/data/2.5/uvi/forecast?" + APIKey;
 
 
 $("#searchButton").on("click", function () {
@@ -60,6 +60,5 @@ $("#searchButton").on("click", function () {
         $("#UVIndex").html(response[0].value);
     });
   });
-
   
 });
