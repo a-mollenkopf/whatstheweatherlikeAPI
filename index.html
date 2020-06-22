@@ -28,57 +28,158 @@
     ></script>
   </head>
   <body>
-      <!-- header -->
+    <!-- header -->
     <div class="jumbotron" id="jumbotron">
-        <h1 class="display-4">Weather Dashboard</h1>
+      <h1 class="display-4">Weather Dashboard</h1>
     </div>
-            
+
     <!-- search bar -->
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h6>Search for a City:</h6>
-                        <form class="form-inline">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="userInput">
-                            </div>
-                            <button id="searchButton" type="submit" class="btn btn-primary">Search</button>
-                        </form>
-                    </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h6>Search for a City:</h6>
+              <form class="form-inline">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="userInput" />
                 </div>
+                <button id="searchButton" type="submit" class="btn btn-primary">
+                  Search
+                </button>
                 <div>
-                    <ul id="city-list" class="list-group"></ul>
-                </div>
+                    <ul id="cityList" class="listGroup"></ul>
+                  </div>
+              </form>
             </div>
-               <!-- card at the top that shows data for today -->
-            <div class="col-md-9">
-                <div class="card">
-                    <div class="card-body">
-                        <div id="city-date-icon">
-                            <h3><span id="currentCity"></span></h3> 
-                            <p>Temperature: <span id="temperature"></span></p>
-                            <p>Humidity: <span id="humidity"></span></p>
-                            <p>Wind Speed: <span id="windspeed"></span></p>
-                            <p>UV Index: <span id="UVIndex"></span></p>    
-                        </div>
-                    </div>  
-                </div>
-            
-            
-            
-            <!-- 5 cards for the 5 day forecast -->
-            <div class="row">
-                <div id="forecast-weather" class="col-md-9">
-                <h4>5-Day Forecast:</h4>
-                <div id="forecast-cards"> 
-            </div>
+          </div>
+          <div>
+            <ul id="cityList" class="listGroup"></ul>
+          </div>
         </div>
+        <!-- card at the top that shows data for today -->
+        <div class="col-md-9">
+          <div class="card">
+            <div class="card-body">
+              <div id="city-date-icon">
+                <h3><span id="currentCity"></span></h3>
+                <img
+                  id="iconHeader"
+                  class="icon"
+                />
+                <p>Temperature: <span id="temperature"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Wind Speed: <span id="windspeed"></span></p>
+                <p>UV Index: <span id="UVIndex"></span></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5 cards for the 5 day forecast -->
+          <div class="row">
+            <div id="forecast-weather" class="col-md-9">
+              <h4>5-Day Forecast:</h4>
+              <div id="forecast-cards">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="card" style="width: 10rem;" id="day1">
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          <span class="fiveDayDate1"></span>
+                        </h5>
+                        <h5 class="card-title">
+                          <img class="fiveDayIcon1">
+                        </h5>
+                        <h6 class="card-subtitle mb-2">
+                          Temp: <span class="fiveDayTemp1"></span>
+                        </h6>
+                        <h6 class="card-subtitle mb-2">
+                          Humidity: <span class="fiveDayHumidity1"></span>
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="card" style="width: 10rem;" id="day2">
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          <span class="fiveDayDate2"></span>
+                        </h5>
+                        <h5 class="card-title">
+                          <img class="fiveDayIcon2">
+                        </h5>
+                        <h6 class="card-subtitle mb-2">
+                          Temp: <span class="fiveDayTemp2"></span>
+                        </h6>
+                        <h6 class="card-subtitle mb-2">
+                          Humidity: <span class="fiveDayHumidity2"></span>
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="card" style="width: 10rem;" id="day3">
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          <span class="fiveDayDate3"></span>
+                        </h5>
+                        <h5 class="card-title">
+                          <img class="fiveDayIcon3">
+                        </h5>
+                        <h6 class="card-subtitle mb-2">
+                          Temp: <span class="fiveDayTemp3"></span>
+                        </h6>
+                        <h6 class="card-subtitle mb-2">
+                          Humidity: <span class="fiveDayHumidity3"></span>
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="card" style="width: 10rem;" id="day4">
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          <span class="fiveDayDate4"></span>
+                        </h5>
+                        <h5 class="card-title">
+                          <img class="fiveDayIcon4">
+                        </h5>
+                        <h6 class="card-subtitle mb-2">
+                          Temp: <span class="fiveDayTemp4"></span>
+                        </h6>
+                        <h6 class="card-subtitle mb-2">
+                          Humidity: <span class="fiveDayHumidity4"></span>
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="card" style="width: 10rem;" id="day5">
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          <span class="fiveDayDate5"></span>
+                        </h5>
+                        <h5 class="card-title">
+                          <img class="fiveDayIcon5">
+                        </h5>
+                        <h6 class="card-subtitle mb-2">
+                          Temp: <span class="fiveDayTemp5"></span>
+                        </h6>
+                        <h6 class="card-subtitle mb-2">
+                          Humidity: <span class="fiveDayHumidity5"></span>
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
-
-
