@@ -28,7 +28,7 @@ Working on this website helped me further my skills in CSS styling as well as us
 [Github repo site] (https://github.com/a-mollenkopf/whatstheweatherlikeAPI)
 
 
-![alt text](assets\weather-dashboard-deployed.png)
+![alt text](weather-dashboard-deployed.png)
 
 
 # Credits
