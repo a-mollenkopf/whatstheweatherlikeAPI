@@ -1,9 +1,11 @@
 #jumbotron {
-    text-align: center;
+    text-align: center !important;
     color: whitesmoke;
     background-color:rgb(51, 51, 51);
+    height: 100px;
+    padding:10px;
 }
-#city-list {
+#cityList {
     width: 22rem;
   }
 
@@ -11,3 +13,91 @@
     display: flex;
   }
 
+  #day1 {
+    padding-right: 5px;
+    background-color: blue;
+  }
+  #day2 {
+    padding-right: 5px;
+    background-color: blue;
+  }
+
+  #day3 {
+    padding-right: 5px;
+    background-color: blue;
+  }
+
+  #day4 {
+    padding-right: 5px;
+    background-color: blue;
+  }
+
+  #day5 {
+    padding-right: 5;
+    background-color: blue;
+  }
+
+  .card-title {
+    color: white;
+  }
+
+  .card-subtitle {
+    color: white;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: white;
+    padding-top: 20px;
+  }
+  
+  li {
+    height: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1.5em;
+  
+  }
+  
+  li:before {
+    content: "\200B";
+    position: absolute;
+  }
+  
+  li::after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  
+  li button {
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    background-color: white;
+    border:solid;
+    border-color: rgb(204, 198, 198);
+    border-width: 1px;
+    width: 100%;
+    text-align: left;
+    
+    font-size: 1em;
+  }
+   .UVGreen {
+     background-color: green;
+     color: white;
+     padding: 10px;
+     border-radius: 6px;
+   }
+    .UVYellow {
+      background-color: yellow;
+      padding: 10px;
+      border-radius: 6px;
+    }
+
+    .UVRed { 
+      background-color: rgb(148, 25, 25);
+      color: white;
+      padding: 10px;
+      border-radius: 6px;
+    }
