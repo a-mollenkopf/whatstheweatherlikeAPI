@@ -22,9 +22,13 @@ Type git push to push to github and open it from there!
 Working on this website helped me further my skills in CSS styling as well as using boostrap to style pages. I learned more on how to manipulate the DOM and dynamically generate buttons. I have also learned more on API calls and how to use them.
 
 
-[Deployed Site] https://a-mollenkopf.github.io/whatstheweatherlikeAPI/
-[Github repo site] https://github.com/a-mollenkopf/whatstheweatherlikeAPI
-![alt text] (assets/images/weather-dashboard-deployed.png)
+[Deployed Site] (https://a-mollenkopf.github.io/whatstheweatherlikeAPI/)
+
+
+[Github repo site] (https://github.com/a-mollenkopf/whatstheweatherlikeAPI)
+
+
+![alt text](assets\weather-dashboard-deployed.png)
 
 
 # Credits
